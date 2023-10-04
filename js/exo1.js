@@ -6,5 +6,6 @@ for(var i = 0; i < listeImages.children.length; i++){
 }
 
 function clic(){
-    console.log("clic");
+    console.log("click");
+    console.log(this.children[0].src);
 }
