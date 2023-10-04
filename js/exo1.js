@@ -10,6 +10,21 @@ for(var i = 0; i < listeImages.children.length; i++){
 function clic(){
     console.log("click");
     console.log(this.children[0].src);
+
+    let premiereImage = listeImages.children[0].children[0].src;
+    let deuxiemeImage = listeImages.children[1].children[0].src;
+    let troisiemeImage = listeImages.children[2].children[0].src;
+    let quatriemeImage = listeImages.children[3].children[0].src;
+
+    listeImages.children[2].children[0].src = deuxiemeImage;
+    listeImages.children[3].children[0].src = troisiemeImage;
+    listeImages.children[0].children[0].src = quatriemeImage;
+    listeImages.children[1].children[0].src = premiereImage;
+
+    // listeImages.children[0].children[0].src = quatriemeImage;
+    // listeImages.children[1].children[0].src = deuxiemeImage;
+    // listeImages.children[2].children[0].src = troisiemeImage;
+    // listeImages.children[3].children[0].src = premiereImage;
 }
 
 function changeCursor(){
